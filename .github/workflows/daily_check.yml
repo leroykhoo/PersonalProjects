@@ -24,3 +24,11 @@ jobs:
         env:
           MENSA_PASSWORD: ${{ secrets.MENSA_PASSWORD }}
         run: python schaeufele.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "MensaBot"
+          git config --global user.email "bot@github.com"
+          git add menu_history.txt
+          git commit -m "Update menu log for $(date)" || exit 0
+          git push
