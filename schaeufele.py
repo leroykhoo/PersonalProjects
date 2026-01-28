@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 from email.message import EmailMessage
 import os
+import datetime
 
 # --- CONFIGURATION ---
 URL = "https://www.werkswelt.de/?id=mohm"
@@ -36,6 +37,7 @@ def check_mensa():
         response.encoding = 'utf-8'
         soup = BeautifulSoup(response.text, 'html.parser')
         menu_text = soup.get_text().lower()
+        log_menu(menu_text)
 
         print("--- Checking for Schäufele ---")
         
@@ -48,5 +50,11 @@ def check_mensa():
     except Exception as e:
         print(f"Script error: {e}")
 
+def log_menu(content):
+    date_str = datetime.date.today().strftime("%Y-%m-%d")
+    with open("menu_history.txt", "a") as f:
+        f.write(f"{date_str}: {content[:100]}...\n")
+
 if __name__ == "__main__":
+
     check_mensa()
