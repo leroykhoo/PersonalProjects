@@ -14,6 +14,17 @@ EMAIL = os.getenv("GARMIN_EMAIL")
 PASSWORD = os.getenv("GARMIN_PASSWORD")
 
 
+def mask_email(email):
+    if not email or "@" not in email:
+        return "<not-set>"
+    local, domain = email.split("@", 1)
+    if not local:
+        return f"***@{domain}"
+    if len(local) == 1:
+        return f"{local}***@{domain}"
+    return f"{local[0]}***{local[-1]}@{domain}"
+
+
 def first_non_null(*values):
     for value in values:
         if value is not None:
@@ -186,9 +197,14 @@ def save_json(filename, data):
 
 def main():
     try:
+        if not EMAIL or not PASSWORD:
+            raise RuntimeError(
+                "Missing GARMIN_EMAIL or GARMIN_PASSWORD environment variables."
+            )
+
         # 2. Authentifizierung (Authentication)
         # ueberpruefe nur die E-Mail, drucke niemals das Passwort!
-        print(f"Verbinde mit Garmin Connect fuer Email: {EMAIL} ...")
+        print(f"Verbinde mit Garmin Connect fuer Email: {mask_email(EMAIL)} ...")
         client = Garmin(EMAIL, PASSWORD)
         client.login()
         print("Erfolgreich eingeloggt!")

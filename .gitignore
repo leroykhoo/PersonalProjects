@@ -1,0 +1,11 @@
+# Garmin raw personal exports (do not commit)
+GarminDashboard/aktivitaeten.json
+GarminDashboard/herzfrequenz.json
+GarminDashboard/sleep_data.json
+GarminDashboard/training_status.json
+GarminDashboard/training_readiness.json
+GarminDashboard/user_summary.json
+GarminDashboard/max_metrics.json
+
+# Optional: aggregated daily snapshot still contains personal context
+GarminDashboard/dashboard_metrics.json
