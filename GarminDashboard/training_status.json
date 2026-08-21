@@ -1,0 +1,105 @@
+{
+    "userId": 90817648,
+    "mostRecentVO2Max": {
+        "userId": 90817648,
+        "generic": {
+            "calendarDate": "2026-08-19",
+            "vo2MaxPreciseValue": 49.8,
+            "vo2MaxValue": 50.0,
+            "fitnessAge": null,
+            "fitnessAgeDescription": null,
+            "maxMetCategory": 0
+        },
+        "cycling": null,
+        "heatAltitudeAcclimation": {
+            "calendarDate": "2026-08-20",
+            "altitudeAcclimationDate": "2026-08-19",
+            "previousAltitudeAcclimationDate": "2026-08-19",
+            "heatAcclimationDate": "2026-08-19",
+            "previousHeatAcclimationDate": "2026-08-19",
+            "altitudeAcclimation": 0,
+            "previousAltitudeAcclimation": 0,
+            "heatAcclimationPercentage": 32,
+            "previousHeatAcclimationPercentage": 32,
+            "heatTrend": "ACCLIMATIZED",
+            "altitudeTrend": null,
+            "currentAltitude": 0,
+            "previousAltitude": 0,
+            "acclimationPercentage": 0,
+            "previousAcclimationPercentage": 0,
+            "altitudeAcclimationLocalTimestamp": "2026-08-20T00:05:24.0"
+        }
+    },
+    "mostRecentTrainingLoadBalance": {
+        "userId": 90817648,
+        "metricsTrainingLoadBalanceDTOMap": {
+            "3341564340": {
+                "calendarDate": "2026-08-20",
+                "deviceId": 3341564340,
+                "monthlyLoadAerobicLow": 353.53934,
+                "monthlyLoadAerobicHigh": 572.2324,
+                "monthlyLoadAnaerobic": 39.138016,
+                "monthlyLoadAerobicLowTargetMin": 148,
+                "monthlyLoadAerobicLowTargetMax": 359,
+                "monthlyLoadAerobicHighTargetMin": 238,
+                "monthlyLoadAerobicHighTargetMax": 449,
+                "monthlyLoadAnaerobicTargetMin": 0,
+                "monthlyLoadAnaerobicTargetMax": 211,
+                "trainingBalanceFeedbackPhrase": "AEROBIC_HIGH_FOCUS",
+                "primaryTrainingDevice": true
+            }
+        },
+        "recordedDevices": [
+            {
+                "deviceId": 3341564340,
+                "imageURL": "https://static.garmincdn.com/com.garmin.connect/content/images/device-images/fenix-6x-pro.png",
+                "deviceName": "fenix 6X ASIA Sapphire",
+                "category": 0
+            }
+        ]
+    },
+    "mostRecentTrainingStatus": {
+        "userId": 90817648,
+        "latestTrainingStatusData": {
+            "3341564340": {
+                "calendarDate": "2026-08-20",
+                "sinceDate": "2026-08-19",
+                "weeklyTrainingLoad": null,
+                "trainingStatus": 7,
+                "timestamp": 1787204975000,
+                "deviceId": 3341564340,
+                "loadTunnelMin": null,
+                "loadTunnelMax": null,
+                "loadLevelTrend": null,
+                "sport": "RUNNING",
+                "subSport": "GENERIC",
+                "fitnessTrendSport": "RUNNING",
+                "fitnessTrend": 2,
+                "trainingStatusFeedbackPhrase": "PRODUCTIVE_6",
+                "trainingPaused": false,
+                "acuteTrainingLoadDTO": {
+                    "acwrPercent": 52,
+                    "acwrStatus": "OPTIMAL",
+                    "acwrStatusFeedback": "FEEDBACK_2",
+                    "dailyTrainingLoadAcute": 343,
+                    "maxTrainingLoadChronic": 399.0,
+                    "minTrainingLoadChronic": 212.8,
+                    "dailyTrainingLoadChronic": 266,
+                    "dailyAcuteChronicWorkloadRatio": 1.2
+                },
+                "primaryTrainingDevice": true
+            }
+        },
+        "recordedDevices": [
+            {
+                "deviceId": 3341564340,
+                "imageURL": "https://static.garmincdn.com/com.garmin.connect/content/images/device-images/fenix-6x-pro.png",
+                "deviceName": "fenix 6X ASIA Sapphire",
+                "category": 0
+            }
+        ],
+        "showSelector": false,
+        "lastPrimarySyncDate": "2026-08-20"
+    },
+    "heatAltitudeAcclimationDTO": null
+}

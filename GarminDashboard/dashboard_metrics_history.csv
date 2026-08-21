@@ -1,0 +1,2 @@
+date,resting_hr,min_hr,max_hr,sleep_score,load_focus,acute_load,acute_chronic_ratio,acute_status,calories,steps,vo2max,training_status_phrase
+2026-08-20,50,49,107,70,AEROBIC_HIGH_FOCUS,343,1.2,OPTIMAL,1632.0,5661,50.0,PRODUCTIVE_6
