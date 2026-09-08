@@ -7,8 +7,9 @@ import pandas as pd
 import streamlit as st
 
 APP_DIR = Path(__file__).resolve().parent
-CSV_PATH = APP_DIR / "dashboard_metrics_history.csv"
-DB_PATH = APP_DIR / "garmin_dashboard.db"
+DATA_DIR = APP_DIR / "data"
+CSV_PATH = DATA_DIR / "dashboard_metrics_history.csv"
+DB_PATH = DATA_DIR / "garmin_dashboard.db"
 TABLE_NAME = "metrics_history"
 
 st.set_page_config(

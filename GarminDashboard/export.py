@@ -6,7 +6,7 @@ import sqlite3
 from garminconnect import Garmin
 from pathlib import Path
 
-OUTPUT_DIR = Path(r"C:\Users\Leroy\Documents\GitHub\PersonalProjects\GarminDashboard")
+OUTPUT_DIR = Path(__file__).resolve().parent / "data"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # 1. Anmeldedaten (Credentials)
